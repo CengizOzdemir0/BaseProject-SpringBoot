@@ -20,6 +20,9 @@ public class SecurityConstant {
   public static final String JSON_CHARSET_UTF_8_VALUE = "application/json;charset=UTF-8";
 
 
+  //TODO kaldirilacak
+  public static final String MESAJ = "/mesajlar/**";
+
   private static final String[] swaggerUrls = {"/api/v1/auth/**", "/v3/api-docs/**", "/v3/api-docs.yaml", "/swagger-ui/**", "/swagger-ui.html",};
 
 

@@ -1,6 +1,7 @@
 package com.cengiz.baseproject.config.security;
 
 
+import com.cengiz.baseproject.config.redis.JwtCacheService;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureException;

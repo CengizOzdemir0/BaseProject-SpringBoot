@@ -48,7 +48,7 @@ public class WebSecurityConfig {
           logout.logoutRequestMatcher(new AntPathRequestMatcher(SecurityConstant.LOGOUT));
         })
         .authorizeHttpRequests(req -> {
-          req.requestMatchers(SecurityConstant.VATANDAS_LOGIN)
+          req.requestMatchers(SecurityConstant.VATANDAS_LOGIN,SecurityConstant.MESAJ)
               .permitAll();
           req.anyRequest().authenticated();
         })

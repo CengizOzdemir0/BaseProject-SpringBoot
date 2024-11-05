@@ -1,5 +1,6 @@
 package com.cengiz.baseproject.config.security;
 
+import com.cengiz.baseproject.config.redis.JwtCacheService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
