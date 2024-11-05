@@ -8,6 +8,7 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/db?stringtype=unspecified&prepareThreshold=0&ApplicationName=${spring.application.name}
+    jdbc-url: jdbc:postgresql://localhost:5432/db?stringtype=unspecified&prepareThreshold=0&ApplicationName=${spring.application.name}
     username: test123
     password: test123
     driver-class-name: org.postgresql.Driver
