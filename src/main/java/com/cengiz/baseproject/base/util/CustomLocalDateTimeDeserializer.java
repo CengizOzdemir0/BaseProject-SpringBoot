@@ -11,8 +11,6 @@ import java.time.ZoneOffset;
 /**
  * yyyy-MM-dd formatında gelen json veriyi instant a çevirir.Not: time bilgisi 00:00:00 ele alınır.
  *
- * @author Mehmet ONAR
- * @date 2024-03-07
  */
 public class CustomLocalDateTimeDeserializer extends JsonDeserializer<LocalDateTime> {
 

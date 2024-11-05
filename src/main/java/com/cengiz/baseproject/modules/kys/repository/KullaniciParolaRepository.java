@@ -7,4 +7,5 @@ import com.cengiz.baseproject.modules.kys.repository.BaseJPARepository;
 public interface KullaniciParolaRepository extends BaseJPARepository<KullaniciParola, Long> {
 
     KullaniciParola findByKullaniciRol_Id(Long kullaniciId);
+
 }

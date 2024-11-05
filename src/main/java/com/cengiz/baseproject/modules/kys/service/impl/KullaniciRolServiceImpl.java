@@ -1,6 +1,7 @@
 package com.cengiz.baseproject.modules.kys.service.impl;
 
 import com.cengiz.baseproject.modules.kys.data.dto.KullaniciRolDto;
+import com.cengiz.baseproject.modules.kys.data.entity.Kullanici;
 import com.cengiz.baseproject.modules.kys.data.entity.KullaniciRol;
 
 import com.cengiz.baseproject.modules.kys.data.mapper.KullaniciRolMapper;
@@ -10,7 +11,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Service
@@ -29,6 +31,14 @@ public class KullaniciRolServiceImpl implements KullaniciRolService {
     kullaniciRolRepository.save(kullaniciRol);
     return kullaniciRolMapper.entityToDto(kullaniciRol);
   }
-
+  @Override
+  public List<KullaniciRolDto> getAllByFkKullaniciId(Long fkKullaniciId) {
+    return kullaniciRolMapper.entityToDto(kullaniciRolRepository.findAllByKullanici_Id(fkKullaniciId));
+  }
+  @Override
+  public List<KullaniciRol> findByKullaniciAdi(Long kullaniciAdi) {
+    return kullaniciRolRepository.findByKullanici_KullaniciAdi(kullaniciAdi)
+            .orElse(new ArrayList<>());
+  }
 
 }

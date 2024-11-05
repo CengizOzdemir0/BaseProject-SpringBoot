@@ -8,10 +8,7 @@ import com.cengiz.baseproject.modules.kys.data.mapper.KullaniciParolaMapper;
 import com.cengiz.baseproject.modules.kys.repository.KullaniciParolaRepository;
 import com.cengiz.baseproject.modules.kys.service.KullaniciParolaService;
 
-/**
- * @author Bahar KALKAN
- * @date 2024-03-15T09:55:12.780Z
- */
+
 
 @Service
 @RequiredArgsConstructor
