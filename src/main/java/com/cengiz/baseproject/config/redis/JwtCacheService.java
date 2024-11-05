@@ -1,17 +1,16 @@
-package tr.gov.saglik.uhds.config.security;
+package com.cengiz.baseproject.config.redis;
 
 
+import com.cengiz.baseproject.base.dto.KullaniciDto;
 import lombok.extern.slf4j.Slf4j;
-import tr.gov.saglik.uhds.base.dto.KullaniciDto;
-import tr.gov.saglik.uhds.config.redis.Cache;
-
-import java.util.UUID;
-
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+
+
+import java.util.UUID;
 
 @Service
 @Slf4j
