@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    open-in-view: false
+  application:
+    name: base-project
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db?stringtype=unspecified&prepareThreshold=0&ApplicationName=${spring.application.name}
+    jdbc-url: jdbc:postgresql://localhost:5432/db?stringtype=unspecified&prepareThreshold=0&ApplicationName=${spring.application.name}
+    username: test123
+    password: test123
+    hikari:
+      minimum-idle: 0
+      maximum-pool-size: 20
+      connection-timeout: 10000
+      idle-timeout: 10000
+      max-lifetime: 1800000
+      auto-commit: false
+      keepalive-time: 60000
+
+
+
+
+jwt:
+  expiration: 7200000
+  secret: 9f253cc5c66c4c4bbd1a6781068d5aea
